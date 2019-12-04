@@ -30,14 +30,8 @@ export default class InputForm extends React.Component {
   calculateCountdown = () => {
     const startDate = new Date();
     const { endDate } = this.state;
-    let errorMsg = "";
 
-    if (endDate < startDate) {
-      errorMsg =
-        "Please select end date and time greater than current date and time.";
-    }
-
-    this.setState({ errorMsg });
+    this.setState({ errorMsg: "" });
 
     const timeRemaining = endDate.getTime() - startDate.getTime();
 
