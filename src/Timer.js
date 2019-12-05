@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 import DateTimePicker from "react-datetime-picker";
 
-export default class InputForm extends React.Component {
+export default class Timer extends React.Component {
   state = {
     endDate: new Date(),
     days: 0,
